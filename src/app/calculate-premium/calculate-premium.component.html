@@ -15,7 +15,7 @@
       
         <div class="form-group col-6">
             <label>Occupation</label>
-           <select class="form-control" >
+           <select class="form-control" formControlName="occupationId" >
           
             <option *ngFor="let occ of occpationList" value={{occ.id}}>
               {{occ.occupation}}
@@ -26,7 +26,40 @@
 
         
     </div>
+
+    <div class="form-row">
+      
+        <div class="form-group col-6">
+            <label>Birth Date</label>
+         
+
+    <input class="form-control"  onkeydown="return false"  
+    ngbDatepicker (click)="datePicker.toggle()" 
+    #datePicker="ngbDatepicker" formControlName="birthDate"
+     placeholder="yyyy-mm-dd">
+
+
+    </div>
+
+        
+    </div>
+
+    <div class="form-row">
+      
+        <div class="form-group col-6">
+            <label>Death – Sum Insured.</label>
+            <input type="number" formControlName="sumInsured" class="form-control"  />
+           
+        </div>
+
+        
+    </div>
    
   
+    <input type="submit"  class="btn btn-primary"/>
+
+    <div *ngIf="data">Total Premium to payid {{data?.premiumAmount}} </div>
+
+
     
 </form>

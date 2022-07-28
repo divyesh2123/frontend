@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Occupation } from '../models/Occupation';
 import { PremiumOutput } from '../models/PremiumOutput';
+import { PremiumInput } from '../models/PremiumInput';
 
 
 const baseUrl = `${environment.apiUrl}`;
@@ -16,8 +17,8 @@ export class PreimumService {
         return this.http.get<Occupation[]>(`${baseUrl}/GetOccupation`);
     }
 
-    postPremiumInfo(PremiumOutput : PremiumOutput) {
-        return this.http.post(`${baseUrl}/GetPremiumInfo`,PremiumOutput);
+    postPremiumInfo(preimumInput : PremiumInput) {
+        return this.http.post(`${baseUrl}/GetPremiumInfo`,preimumInput);
     }
 
    
