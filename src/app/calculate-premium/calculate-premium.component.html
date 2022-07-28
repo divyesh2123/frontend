@@ -2,11 +2,29 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-row">
       
-        <div class="form-group col-12">
+        <div class="form-group col-6">
             <label>Name</label>
-            <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <input type="text" formControlName="name" class="form-control"  />
            
         </div>
+
+        
+    </div>
+
+    <div class="form-row">
+      
+        <div class="form-group col-6">
+            <label>Occupation</label>
+           <select class="form-control" >
+          
+            <option *ngFor="let occ of occpationList" value={{occ.id}}>
+              {{occ.occupation}}
+            </option>
+            </select>
+           
+        </div>
+
+        
     </div>
    
   

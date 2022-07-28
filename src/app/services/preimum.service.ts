@@ -6,7 +6,7 @@ import { Occupation } from '../models/Occupation';
 import { PremiumOutput } from '../models/PremiumOutput';
 
 
-const baseUrl = `${environment.apiUrl}/users`;
+const baseUrl = `${environment.apiUrl}`;
 
 @Injectable({ providedIn: 'root' })
 export class PreimumService {
