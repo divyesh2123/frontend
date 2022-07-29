@@ -6,7 +6,14 @@
             <label>Name</label>
             <input type="text" formControlName="name" class="form-control"  />
            
+            <span *ngIf="f['name'].errors && issubmit" >
+                <div *ngIf="f['name'].errors?.['required']">
+                 Name is required.
+                </div>
+            
+                </span>  
         </div>
+       
 
         
     </div>
@@ -20,6 +27,13 @@
             <option *ngFor="let occ of occpationList" value={{occ.id}}>
               {{occ.occupation}}
             </option>
+
+            <span *ngIf="f['occupationId'].errors && issubmit" >
+                <div *ngIf="f['occupationId'].errors?.['required']">
+                    occupation is required.
+                </div>
+            
+                </span> 
             </select>
            
         </div>
@@ -38,6 +52,13 @@
     #datePicker="ngbDatepicker" formControlName="birthDate"
      placeholder="yyyy-mm-dd">
 
+     <span *ngIf="f['birthDate'].errors && issubmit" >
+        <div *ngIf="f['occupationId'].errors?.['required']">
+            occupation is required.
+        </div>
+    
+        </span> 
+
 
     </div>
 
@@ -50,6 +71,12 @@
             <label>Death – Sum Insured.</label>
             <input type="number" formControlName="sumInsured" class="form-control"  />
            
+            <span *ngIf="f['sumInsured'].errors && issubmit" >
+                <div *ngIf="f['sumInsured'].errors?.['required']">
+                    occupation is required.
+                </div>
+            
+                </span> 
         </div>
 
         

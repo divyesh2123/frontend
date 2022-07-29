@@ -14,6 +14,7 @@ export class CalculatePremiumComponent implements OnInit {
 
   form!: FormGroup;
   data!: any;
+  issubmit : boolean = false;
   
 
   occpationList! : Occupation[]
@@ -59,7 +60,7 @@ export class CalculatePremiumComponent implements OnInit {
 
     onSubmit() {
        
-
+      this.issubmit =true;
         
 
         // stop here if form is invalid
