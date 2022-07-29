@@ -1,13 +1,19 @@
-# Frontend
+# Calculate Insurance Premiunm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
+This project is integrate with .Net core 6 for consuming data.
 
-You need to add npm install
+Following steps need to perform the run project.
 
-please run command called npm install
 
-than you can run project with npm start
+1.You need to add npm install
+
+2. please run command called npm install
+
+3. than you can run project with npm start
+
+4. You need to run API project as well to get data from API.
 
 ## Development server
 
