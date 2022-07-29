@@ -7,7 +7,7 @@ This project is integrate with .Net core 6 for consuming data.
 Following steps need to perform the run project.
 
 
-1.You need to add npm install
+ 1.You need to add npm install
 
 2. please run command called npm install
 
