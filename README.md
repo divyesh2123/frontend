@@ -6,6 +6,7 @@ This project is integrate with .Net core 6 for consuming data.
 
 Following steps need to perform the run project.
 
+link https://inquisitive-empanada-ac647e.netlify.app/
 
  1.You need to add npm install
 
